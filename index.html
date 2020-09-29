@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="MEMEI">
+    <meta name="author" content="MEMEI">
+    <title>MEMEI</title>
+
+    <link href="./index_files/MEMEIlogo1.png" rel="icon" type="image/png">
+
+
+
+    <link href="./index_files/nucleo.css" rel="stylesheet">
+    <link href="./index_files/font-awesome.min.css" rel="stylesheet">
+
+    <link type="text/css" href="./index_files/MEMEI.css" rel="stylesheet">
+    <style>
+        canvas {
+            border-radius: 4px;
+        }
+    </style>
+    <link href="./index_files/layer.css" type="text/css" rel="styleSheet" id="layermcss">
+	<script type="text/javascript">
+    var targetProtocol = "https:";
+    if (window.location.protocol != targetProtocol)
+    window.location.href = targetProtocol +
+    window.location.href.substring(window.location.protocol.length);
+    </script>
+    <script src="/T/js/particles.min.js"></script>
+	<script src="/T/js/index.js"></script>
+
+</head>
+
+<body>
+    <div id="c1" class="mui-input-row" style="width: 300px; height: 200px;text-align:center;margin:0 auto;display: none;top: 40%;left: calc((100% / 2) - 150px ); position: fixed;z-index: 99; ">
+    </div>
+    <header class="header-global">
+        <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
+            <div class="container">
+                <a class="navbar-brand mr-lg-5" href="">
+                    <img src="./index_files/MEMEI.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="./index_files/menu1.png" style="width: 32px;height: 32px"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbar_global">
+                    <div class="navbar-collapse-header">
+                        <div class="row">
+                            <div class="col-9 collapse-brand">
+                                <a href="" class="d-flex">
+                                    <img src="./index_files/MEMEIlogo1.png" style="width: 32px;height: 32px"><span style="color:fdfcf6;font-size: 22px" class="font-weight-bold">MEMEI</span>
+                                </a>
+                            </div>
+                            <div class="col-3 collapse-close">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                        <li class="nav-item">
+                            <a href="#section-components" class="nav-link" data-toggle="scroll" role="button">
+                                <i class="fa fa-send d-lg-none"></i>
+                                <span class="nav-link-inner--text lang" data-params="v2">Parachutage</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://dontbuymeme.com/" target="_blank">
+                                <i class="fa fa-star-half-full d-lg-none"></i>
+                                <span class="nav-link-inner--text">MEME</span>
+                            </a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="https://memeswap.net" target="_blank">
+                                <i class="fa fa-exchange d-lg-none"></i>
+                                <span class="nav-link-inner--text">Memeswap</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/memeilove4" target="_blank">
+                                <i class="fa fa-twitter-square d-lg-none"></i>
+                                <span class="nav-link-inner--text">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/allena098" target="_blank">
+                                <i class="fa fa-github d-lg-none"></i>
+                                <span class="nav-link-inner--text">Github</span>
+                            </a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="mailto:memeidobest@yahoo.com" target="_blank">
+                                <i class="fa fa-mail-forward d-lg-none"></i>
+                                <span class="nav-link-inner--text">Email</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown d-lg-none d-sm-none d-md-none d-xl-none">
+                            <a href="#" class="nav-link" data-toggle="dropdown" role="button">
+                                <i class="fa fa-language d-lg-none"></i>
+                                <span class="nav-link-inner--text cur_language">English</span>
+                            </a>
+                            <div class="dropdown-menu lang-menu">
+                                <a class="dropdown-item" data-params="en_us">English</a>
+                                <a class="dropdown-item" data-params="zh_tw">Traditional Chinese</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                        <li class="nav-item d-none d-lg-block ml-lg-4 dropdown">
+                            <a href="#" style="font-weight: bold;color: white" class="btn-icon" data-toggle="dropdown" role="button">
+                                <span class="btn-inner--icon">
+                                    <i class="fa fa-language mr-2"></i>
+                                </span>
+                                <span class="nav-link-inner--text cur_language">English</span>
+                            </a>
+                            <div class="dropdown-menu lang-menu">
+                                <a class="dropdown-item" data-params="en_us">English</a>
+                                <a class="dropdown-item" data-params="zh_tw">Traditional Chinese</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+        <div id="parallax" class="position-relative">
+
+            <section class="section-hero section-shaped my-0">
+                <div class="shape shape-style-1 shape-primary" id="yifg-bg">
+                    <canvas id="quietflow" width="1903" height="921" style="z-index: -1000; position: absolute; top: 0px;"></canvas>
+
+                    <!-- <div class="layer" data-depth="0.6"> -->
+                            <!-- <div class="some-space"> -->
+                                 <!-- <h1>MEMEI</h1>   -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    <div class="layer" data-depth="0.4">
+                        <div id="particles-js"></div>
+                    </div>
+                </div>
+                <div class="container shape-container align-items-center">
+                    <div class="row pt-lg-8 pt-lg">
+                        <div class="col-lg-6 col-12" style="display: flex;align-items: center">
+                            <div>
+                                <div class="text-center">
+                                    <h1 style="font-size: 50px;font-weight: bold;color: white;letter-spacing: 2px;">
+                                        <span style="color: #f1f4fb;">MEMEI</span></h1>
+
+                                    <p class="lead text-white lang" data-params="v6">
+                                        MEMEI is the equity token of Memeswap, a decentralized Nft asset exchange platform that was initiated by MEME self-governed community. MEMEI can move artistic assets and facilitate their circulation on chain by leveraging the features of ERC721 and ERC155 protocols.Memeswap will use optimostoc rollup technology to reduce transaction gas costs.
+                                    </p>
+                                    <div class="btn-wrapper">
+                                        <a href="#section-components" class="btn btn-primary btn-icon" data-toggle="scroll">
+                                            <span class="btn-inner--icon"><i class="fa fa-send"></i></span>
+                                            <span class="btn-inner--text lang" data-params="v7">Parachutage</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 pt-lg-4 pt-5 pl-lg-lg" style="display: flex;align-items: center">
+                            <img src="./index_files/MEMEI2.png" style="width: 95%;height: auto">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="section" style="background:#417bff;padding-bottom: 0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 pt-5">
+                        <h3 class="h2 text-white font-weight-bold  mb-5 text-center lang" data-params="v3">How to get MEMEI? ？
+                        </h3>
+                        <h4 class="h6 text-white mb-4 lh-150 lead lang" data-params="v4">
+                            The total amount of MEMEI in circulation is 100,000,000, 8% of which is planned to be airdropped to the community, 40% of which will participate in crowd-funding, and the rest 52% of which will be used for liquidity mining. There will be no token reserves, pre-mining and additional issuance.
+                        </h4>
+
+                        <h4 class="h6 text-white mb-4 lh-150 lead lang" data-params="v5">
+						     If the crowdfunded amount is not up to 1000ETH when the crowdfunding ends, all crowdfunded ETH will be refunded to the paying account and the crowdfunded MEMEI will be injected into liquidity mining pools.
+                        </h4>
+                        <h4 class="h6 text-white mb-4 lh-150 lead lang" data-params="v44">
+                            MEMEI tokens can now be obtained by participating in MEMEI airdrops, MEMEI crowdfunding, etc. In the future, MEMEI can be obtained through liquidity mining and exchanges.</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12 pt-5">
+                        <div class="card shadow border-0" style="background: linear-gradient(180deg, #112A63 15%, #1B5DA0 100%)">
+                            <div class="card-body py-5" style="padding-bottom: 15px!important;">
+                                <h3 class="h3 text-white font-weight-bold mb-4 mb-5 text-center lang" data-params="v2">
+                                    Airdrop instructions</h3>
+                                <div class="h6 text-center lang" data-params="v45" style="color:#bcd8fd;">Countdown</div>
+                                <h3 class="h3 text-white font-weight-bold text-center " id="countdown">20 d 00 h 00 m 01 s
+                                </h3>
+                            </div>
+                            <div class="h6 text-center mb-5 font-weight-bold lh-150 lang" data-params="v46" style="color:#bcd8fd;letter-spacing: 1px">The number of airdrops and crowdfunding is limited, and the smart aggregator will issue MEMEI according to the time sequence of transferring ETH</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-components" id="section-components" style="background:#417bff;padding-bottom: 0">
+            <div class="container">
+                <div class="address-panel" style="border-radius: 8px;padding: 25px 15px; border: solid 3px rgba(25,83,148,0.7);margin-bottom: 25px">
+                    <div class="row">
+                        <div class="col-lg-3 d-flex justify-content-lg-center">
+                            <h3 class="h2 font-weight-bold mt-lg-4" style="color: #1A5B9E">STEP 1</h3>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex">
+                                <img src="./index_files/eth.png" width="32" height="32">
+                                <h3 class="h4 text-white font-weight-bold mb-4 lang" style="letter-spacing:1px;margin-left: 10px" data-params="v8">Enter ETH address</h3>
+                            </div>
+                            <div class="form-group d-flex" >
+                                <input type="hidden" name="invcode" value="">
+                                <input type="text" placeholder="Please enter your Ethereum address to participate in the MEMEI airdrop" class="form-control address lang" data-params="v9">
+                                <button class="btn btn-primary join-btn" style="margin-top: .1rem;margin-left: 1rem" type="button" id='subeth'><span class="btn-inner--icon"><i class="fa fa-send"></i></span>
+                                    <span class="btn-inner--text lang" data-params="v10">Submit</span></button>
+                            </div>
+                            <div class="alert alert-danger alert-dismissible fade" role="alert" style="margin-bottom: 15px;">
+                                <span class="alert-inner--icon"><i class="fa fa-warning"></i></span>
+                                <span class="alert-inner--text text"></span>
+                            </div>
+                        </div>
+                        <div class="offset-lg-3"></div>
+                    </div>
+                </div>
+                <div class="share-panel" style="display: none">
+                    <div class="profile-page">
+                        <div class="card-profile" style="margin-top: 0;margin-bottom: 15px">
+                            <div class="card-profile-stats d-flex justify-content-center" style="padding-left: 15px;padding-right: 15px">
+                                <div style="background: linear-gradient(10deg, #112A63 15%, #1B5DA0 100%);border-radius: 4px" class="col-4">
+                                    <span><img src="./index_files/MEMEIlogo1.png"
+                                            style="width: 52px;height: 52px"></span>
+                                    <span class="heading text-white"><span class="balance text-white">0 </span> MEMEI
+                                    </span>
+                                    <span class="description lang" data-params="v12">Balance</span>
+                                </div>
+                                <div style="background: linear-gradient(10deg, #112A63 15%, #1B5DA0 100%);border-radius: 4px" class="col-4">
+                                    <span><i class="fa fa-group"
+                                            style="font-size: 33px;margin: 10px 0;color: #3C6EA6"></i></span>
+                                    <span class="heading text-white"><span class="members">0</span> <span class="lang" data-params="v35">Persons</span></span>
+                                    <span class="description lang" data-params="v13">Invited</span>
+                                </div>
+                                <div style="background: linear-gradient(10deg, #112A63 15%, #1B5DA0 100%);border-radius: 4px" class="col-4">
+                                    <span><i class="fa fa-link"
+                                            style="font-size: 33px;margin: 10px 0;color: #3C6EA6"></i></span>
+                                    <span class="heading text-white"><span class="invbonus">0</span> MEMEI</span>
+                                    <span class="description lang" data-params="v14">Invitation reward</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5" style="border-radius: 8px;padding: 25px 15px; border: solid 3px rgba(25,83,148,0.7)">
+                        <div class="d-flex justify-content-between">
+                            <h3 class="h4 text-white font-weight-bold mb-4 lang" data-params="v11" style="margin-top: 15px">Crowdfunding address</h3>
+                            <h3 class="h2 font-weight-bold mt-2" style="color: #1A5B9E">STEP 2</h3>
+                        </div>
+                        <div class="h6 text-info" style="word-break: break-all;"><i class="fa fa-copy copy-text btn-tooltip lang" data-toggle="tooltip" data-placement="top" title="" data-container="body" data-animation="true" data-original-title="COPY" data-params="copy" data-text="0x0D04952dc334b09AF112253C14b363548ebE9a23"
+                                style="margin-right: 10px;color: #bcd8fd"></i><span class="text-primary">0x0D04952dc334b09AF112253C14b363548ebE9a23</span></div>
+                        <h6 class="h6"><span class="lang text-danger font-weight-bold lh-150" data-params="v36" style="white-space: normal;text-align: left;">Price of crowdfunding: Phase 1: 1ETH =50000 MEMEI; Phase 2: 1ETH=33333 MEMEI. The earlier the participation, the greater the success rate. </span>
+                        </h6>
+                        <h6 class="h6 lh-150"><span class="lang text-white" data-params="v15">Use your wallet</span> <span class="user-address text-white" style="word-break: break-all;"></span>
+                            <span class="lang text-white" data-params="v16">Send ETH to the crowdfunding address.</span></h6>
+                    </div>
+                    <div style="background: linear-gradient(10deg, #112A63 15%, #1B5DA0 100%);padding: 35px 15px 45px 15px;border-radius: 4px">
+                        <h3 class="h4 text-white font-weight-bold mb-5 lang" data-params="v37">Subscription record</h3>
+                        <div>
+                            <table class="table" style="margin-bottom:0;color: #bcd8fd">
+                                <thead>
+                                    <tr>
+                                        <th style="border-top: 0; border-bottom: .0625rem solid rgba(25,83,148,1)" scope="col" class="lang" data-params="v38">Time</th>
+                                        <th style="border-top: 0;border-bottom: .0625rem solid rgba(25,83,148,1)" scope="col" class="lang" data-params="v39">Transfer in</th>
+                                        <th style="border-top: 0;border-bottom: .0625rem solid rgba(25,83,148,1)" scope="col" class="lang" data-params="v40">Get</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="MEMEI-history">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mb-5" style="background: linear-gradient(10deg, #112A63 15%, #1B5DA0 100%);padding: 35px 15px 45px 15px;border-radius: 4px">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3 class="h4 text-white font-weight-bold mb-5 lang" data-params="v17">Invitation link</h3>
+                            </div>
+                            <div class="col-6 justify-content-end text-right">
+                                <a href="#" role="button" data-toggle="modal" data-target="#modal-default" style="top: 5px;position: relative"><i class="fa fa-qrcode"></i> <span
+                                        class="lang font-weight-bold" data-params="v18">My QR code</span></a>
+                                <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+                                    <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+                                        <div class="modal-content" style="background: linear-gradient(10deg, #112A63 15%, #1B5DA0 100%);">
+                                            <div class="modal-header" style="border-bottom-color: #3C6EA6">
+                                                <h6 class="modal-title text-white lang" id="modal-title-default" data-params="v19">My QR code picture</h6>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="hidden" name="qrcode" value="">
+                                                <p id="qrcode" style="text-align: center;margin-bottom: 0;border-radius: 4px"></p>
+                                            </div>
+                                            <div class="modal-footer" style="border-top-color: #3C6EA6;">
+                                                <button type="button" class="btn btn-primary lang" data-params="v20" id="save_qrcode">Save QR code</button>
+                                                <button type="button" class="btn btn-link ml-auto text-white lang" data-params="v21" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h6 text-info" style="word-break: break-all;"><i class="fa fa-copy copy-text lang" id="share_url_copy" data-toggle="tooltip" data-placement="top" title="" data-container="body" data-animation="true" data-original-title="COPY" data-params="copy" data-text="?" style="margin-right: 10px;color: #bcd8fd;"></i>
+                            <span id="share_url" class="text-primary">?</span>
+                        </div>
+                        <h6 class="h6 text-white lh-150 lang" data-params="v22">Copy and share your link. You and the invitee will be rewarded with 100 MEMEI at the same time. Each person can invite up to 10 people. Each person can get a maximum of 1000 MEMEI. If it is recognized as cheating, the reward will be cancelled. If you participate in crowdfunding, a refund will be implemented. </h6>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="row row-grid">
+                            <div class="col-lg-4">
+                                <div class="card card-lift--hover shadow border-0" style="min-height: 599px;background: linear-gradient(180deg, #112A63 15%, #1B5DA0 100%);color: #bcd8fd;">
+                                    <div class="card-body py-5">
+                                        <div class="d-flex justify-content-center mb-5"><img width="70" src="./index_files/a1.png"></div>
+                                        <h6 class="h4 text-primary2 text-uppercase font-weight-bold lang" data-params="v23">Airdrop instructions</h6>
+                                        <p class="description font-weight-bold mt-3">• <span class="lang" data-params="v24">8,000,000 MEMEI tokens will be airdropped, 3,000,000 of which will be airdropped to MEME holding accounts randomly and the other 5,000,000 to MEMEI community. Submit an ETH address to be a recipient of the airdrop. 100 MEMEI will be transferred to every participant and 100 more for each successful referral. A maximum of 1,000 MEMEI will be granted to each participant.</span>
+                                        </p>
+                                        <p class="description font-weight-bold mt-3">• <span class="lang" data-params="v25">MEMEI airdrop event will end on Oct 18. Once the event ends, MEMEI token will be automatically granted to the submitted ETH address. Afterwards, MEMEI will be launchd on uniswap and Huobi and on Memeswap by the end of October.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card card-lift--hover shadow border-0" style="min-height: 599px;background: linear-gradient(180deg, #112A63 15%, #1B5DA0 100%);color: #bcd8fd;">
+                                    <div class="card-body py-5">
+                                        <div class="d-flex justify-content-center mb-5"><img width="70" src="./index_files/a2.png"></div>
+                                        <h6 class="h4 text-primary2 text-uppercase font-weight-bold lang" data-params="v26">Crowdfunding rules</h6>
+                                        <p class="description font-weight-bold  mt-3">• <span class="lang" data-params="v27">A total of 40,000,000 MEMEI are planned to be crowdfunded. Crowdfunding time: Sep 29 2020 - 23:59:59 Oct 18 2020 (UTC+8)</span>
+                                        </p>
+                                        <p class="description font-weight-bold  mt-3">• <span class="lang" data-params="v28">Price of crowdfunding: Phase 1: 1ETH =55555 MEMEI; Phase 2: 1ETH=33333 MEMEI</span>
+                                        </p>
+                                        <p class="description font-weight-bold  mt-3">• <span class="lang" data-params="v29">Phase I crowdfunding will start from Sep 29 and last till 400ETH are collected. Phase II crowdfunding will start from collecting the 401th ETH and last till Oct 18. Tokens will be issued in a first come first served manner. Early participants have more chances of success. Unsuccessful purchases when the crowdfunding ends will be refunded to the payment account. All ETH crowdfunded by users will be used to facilitate cross-chain liquidity.</span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card card-lift--hover shadow border-0" style="min-height: 599px;background: linear-gradient(180deg, #112A63 15%, #1B5DA0 100%);color: #bcd8fd;">
+                                    <div class="card-body py-5">
+                                        <div class="d-flex justify-content-center mb-4"><img src="./index_files/a3.png">
+                                        </div>
+                                        <h6 class="h4 text-primary2 text-uppercase font-weight-bold lang" data-params="v30">Crowdfunding method</h6>
+                                        <p class="description font-weight-bold  mt-3">• <span class="lang" data-params="v31">Use your wallet to send ETH to the crowdfunding address</span>
+                                        </p>
+                                        <p class="description font-weight-bold  mt-3">• <span class="lang" data-params="v32">After the airdrop is over, MEMEI will be automatically sent to your source address according to the source address of your ETH sent</span>
+                                        </p>
+                                        <p class="description font-weight-bold  mt-3">• <span class="lang" data-params="v33">This airdrop adopts anti-fraud AI algorithm. Fraudsters will be disqualified from the event and their ETH contribution will be returned to the paying account.</span>
+                                        </p>
+                                        <p class="description font-weight-bold mt-3">• <span class="lang" data-params="v34">Airdrop ETH address do not fill in the exchange\'s  address or other application address,it must be the decentralized wallet ETH address.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section pb-0 section-components" style="background:#417bff;margin-top: 0;padding-top: 0">
+            <div class="py-5">
+                <div class="container">
+                    <div class="card shadow border-0" style="background: linear-gradient(180deg, #112A63 15%, #1B5DA0 100%)">
+                        <div class="card-body py-5">
+                            <div class="text-center mb-3">
+                                <img src="./index_files/MEMEIlogo1.png" width="100" height="100">
+                            </div>
+                            <h3 class="h3 text-white font-weight-bold mb-4 mb-5 text-center lang" data-params="v41">MEMEI contract address
+                            </h3>
+                            <h3 class="h5 text-center font-weight-bold mb-4" style="word-break: break-all;white-space: pre-wrap;color: #bcd8fd"><a href="https://etherscan.io/token/0xab268b0942cabe325e765da4d6ea5ef6a9fc7449" target="_blank">0xab268b0942cabe325e765da4d6ea5ef6a9fc7449</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" style="background:#417bff;padding-top:28px;border: solid 1px rgba(25,83,148,0.7)">
+        <div class="container">
+            <div class="row align-items-center justify-content-md-between">
+                <div class="col-6">
+                    <div class="copyright">
+                        © 2020
+                        <a href="https://memei.io">memei.io</a> <!-- &nbsp Email:<a href="mailto:memeidobest@yahoo.com"> memeidobest@yahoo.com</a> -->
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <ul class="nav nav-footer justify-content-end">
+                        <li class="nav-item">
+                            <a href="hhttps://twitter.com/memeilove4" class="nav-link" target="_blank">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/allena098" class="nav-link" target="_blank">Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index_files/jquery.min.js"></script>
+    <script src="./index_files/popper.min.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/headroom.min.js"></script>
+
+    <script src="./index_files/onscreen.min.js"></script>
+    <script src="./index_files/nouislider.min.js"></script>
+    <script src="./index_files/bootstrap-datepicker.min.js"></script>
+
+    <script src="./index_files/jquery.cookie.min.js"></script>
+    <script src="./index_files/clipboard.min.js"></script>
+    <script src="./index_files/layer.js"></script>
+    <script src="./index_files/jquery.qrcode.min.js"></script>
+    <script src="./index_files/quietflow.js"></script>
+    <script src="./index_files/prism.js"></script>
+    <link type="text/css" href="./index_files/tomorrow-night-blue.css" rel="stylesheet">
+    <script src="./index_files/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <script src="/T/js/script.js"></script>
+    <script src="/index_files/MEMEI.js"></script>
+</body>
+
+</html>
